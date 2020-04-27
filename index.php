@@ -1,5 +1,5 @@
 <?php
-
+include_once "config.php";
 ini_set('display_errors' , '1');
 ini_set('display_startup_errors','1');
 ini_set('error_reporting', E_ALL);
@@ -47,15 +47,14 @@ if($_POST){ /* es posback, porque alguien le dio clik en guardar */
         $jsonClientes = json_encode($aClientes);
 
         //guardamos el json en el archivo 
-          file_put_contents("clientes.txt", $jsonClientes);
+          
     } 
 }
 
 if (isset($_GET["do"]) && $_GET["do"]  == "delete"){
       unset($aClientes[$pos]);
       //Guardar en el archivo el nuevo array de clientes modificado 
-      $jsonClientes = json_encode($jsonClientes);
-      file_put_contents("clientes.txt", $jsonClientes);
+     
 }
 
 ?>
