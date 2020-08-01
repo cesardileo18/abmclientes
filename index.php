@@ -59,10 +59,12 @@ if(isset($_GET["do"]) && $_GET["do"] == "eliminar"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABM Clientes</title>
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://nelsontarche.com.ar/css/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="https://nelsontarche.com.ar/css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
-    <link href="estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+     
 </head>
 <body>
     <div class="container">
@@ -102,7 +104,7 @@ if(isset($_GET["do"]) && $_GET["do"] == "eliminar"){
             <div class="col-6">
                 <div class="row">
                     <div class="col-12">
-                        <a href="index.php"><i class="fas fa-user-plus"></i></a>
+               
                     </div>
                 </div>
                 <table class="table table-hover border">
@@ -125,11 +127,13 @@ if(isset($_GET["do"]) && $_GET["do"] == "eliminar"){
                         </td>
                     </tr>
                     <?php } ?>
-                
                 </table>
+                <a href="index.php"><i class="fas fa-user-plus"></i></a>
             </div>
         </div>
     </div>
-    
 </body>
+<script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </html>
