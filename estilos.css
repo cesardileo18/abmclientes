@@ -1,20 +1,22 @@
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
 body{
     background-color: #faf3f4;
 }
 
-
 i{
   cursor: pointer;
-
 }
 
 .fa-user-plus{
   font-size: 50px;
-  position: fixed;
-  padding-right: 15px;
-  padding-left: 480px;
-  box-sizing: border-box;
-  bottom: 70px;
+  position: relative;
+  padding-left: 10%;
+  margin-top: 10%;
 }
 .fa-edit{
   border: 1px solid #17a2b8;
@@ -32,7 +34,29 @@ i{
   color: white;
   padding: 11px 12px;
 }
+@media screen and (max-width: 800px){
+    .col-6.tabla {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 51%;
+    }
 
+    .fa-user-plus{
+      font-size: 30px;
+      position: relative;
+      padding-left: 10%;
+      margin-top: 2%;
+    }
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      width: 500px;
+  }
+  }
 
 /*
 border: 1px solid #007bff;
